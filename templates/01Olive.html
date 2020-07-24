@@ -17,7 +17,7 @@
     <!-- Nav bar -->
     <div class="navBar container-fluid">
         <div class="row">
-            <span class="col-4 col-sm-4"><a class="navbar-brand" href="index.html"><img src="{%static 'assets/10logo.png'%}"/>Rule<b>Binary</b></a></span>
+            <span class="col-4 col-sm-4"><a class="navbar-brand" href="{% url 'index' %}"><img src="{%static 'assets/10logo.png'%}"/>Rule<b>Binary</b></a></span>
             <span class="col-2 pr-0 navbar-text"><a href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a></span>
             <span class="present pl-1 pr-0 col-2 col-sm-2 navbar-text"><a href="{% url 'olive' %}">01 Olive</a></span>
             <span class="col-2 pl-0 pr-0 navbar-text"><a href="#design">Designs</a></span>
@@ -402,10 +402,10 @@
             }
         }
 
-        function appear() {
-            document.getElementById("calculator").style.display = "block"
-        }
-        setTimeout("appear()", 3000)
+        // function appear() {
+        //     document.getElementById("calculator").style.display = "block"
+        // }
+        // setTimeout("appear()", 3000)
         function closeCalc() {
             document.getElementById("calculator").style.display = "none"
             document.getElementById("showCalc").style.display = "block"

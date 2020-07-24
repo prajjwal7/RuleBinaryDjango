@@ -12,10 +12,12 @@ body {
     padding-top:  70px;
 }
 
+
+
 .whatsapp {
     z-index: 100;
     position: fixed;
-    top: 75%;
+    bottom: 30px;
     background-color: rgb(37,211,102);
     text-align: center;
     border-top-right-radius: 10px;

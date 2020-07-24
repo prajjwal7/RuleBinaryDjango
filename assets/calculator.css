@@ -9,7 +9,7 @@
     margin: 30px;
     border-radius: 10px;
     background-color: rgba(0,0,0,0.9);
-    display: none;
+    /* display: none; */
     z-index: 20;
   }
   .calculator span {
@@ -25,6 +25,7 @@
   }
   .calculator button {
       width: 40%;
+      /* float: right; */
   }
 
   .showCalc {
@@ -37,12 +38,11 @@
     transition-property: bottom;
     right: 0;
     margin: 30px;
-    margin-right: 0;
     font-size: 1.4vw;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 10px;
     background-color: rgba(100,100,255,0.9);
     z-index: 20;
+    /* display: none; */
     cursor: pointer;
   }
   .showCalc p {
