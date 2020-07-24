@@ -25,9 +25,7 @@ SECRET_KEY = '0tr29xgdxz)g(u0&1sh9ehc#ygx*grcn+b^u%+c(4e-2v3z+*6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    '3.6.92.127'
-]
+ALLOWED_HOSTS = ['rulebinary.com','www.rulebinary.com']
 
 
 # Application definition
