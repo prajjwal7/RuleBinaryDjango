@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    overflow-x: hidden;
+}
+
+
+
+body {
+    padding-top:  70px;
+}
+
+
+
+
+/* NavBar */
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    padding-top: 6px;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+.navBar a {
+    text-decoration: none;
+    color: black;
+}
+.navBar .navbar-text  a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+    font-weight: 600;
+}
+.navbar-brand img {
+    height: 40px;
+    margin-right: 0px;
+}
+.present a{
+    padding: 0 5px 14px 5px;
+    font-size: 1.1em;
+    color: rgba(0,0,0,1)!important;
+    font-weight: 800;
+    border-bottom: solid 8px transparent;
+    border-image: url("assets/arrow.png") 300 8;
+}
+
+.whatsapp {
+    z-index: 100;
+    position: fixed;
+    bottom:30px;
+    background-color: rgb(37,211,102);
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;    
+}
+.chat{
+    font-size: 10px;
+    color: white;
+    padding: 10px;
+    padding-top: 0;
+}
+.whatsapp i{
+    font-size: 30px;
+    color: white;
+    padding: 4px 0;
+}
+
+
+
+.description {
+    padding-top: 80px;
+    padding-right: 20px;
+}
+.description span {
+    color: rgba(0,0,0,0.9);
+    font-size: 2em;
+    font-weight: 600;
+}
+.description p {
+    font-size: 1.2em;
+    color: rgba(0,0,0,0.6);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+.container-fluid {
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+}
+
+
+
+
+
+.a01Olive, .rbhead , .a01vision{
+    margin-bottom: 25px;
+    padding: 0px;
+}
+
+
+#vision{
+    margin-bottom: 25px;
+}
+
+
+
+.contact-us {
+    margin-bottom: 30px;
+    margin: auto;
+}
+.contact-us form {
+    padding: 30px;
+    border-radius: 30px;
+}
+.contact-us form span {
+    font-size: 2em;
+    font-weight: 400;
+    color: white;
+} 
+.contact-us form input {
+    margin-top: 20px;
+    border-radius: 50px;
+    height: 50px;
+    border: none;
+    box-shadow: 
+    2px 2px 2px 1px grey;
+    padding-left: 30px;
+}
+.submit {
+    border-radius: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: rgba(0,0,0,1)!important;
+    height: 40px;
+    width: 200px;
+}
+
+
+
+.line{
+    height: 3px;
+    background-color: rgba(0,0,0,0.4);
+}
+.textOR{
+    font-size: 2em;
+    color: rgba(0,0,0,0.6);
+    margin-top: -24px;
+}
+.OR{
+    width: 100%;
+    height: 40px;
+    padding-top: 15px;
+    margin-bottom: 25px;
+}
+
+/* Footer */
+.footer1 span{
+    font-size: 2em;
+    font-weight: 600;
+}
+.footer1 p{
+    font-weight: 600;
+}
+
+.rightsReserved {
+    padding-bottom: 20px;
+}
+.rightsReserved .name {
+    font-weight: 500;
+}
+.rightsReserved .reserved {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.rightsReserved {
+    background-color: rgba(0,0,0,0.4);
+    text-align: center!important;
+}
+.rightsReserved img{
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 680px) {
+    .navBar .navbar-text  a {
+        font-size: 0.8em;
+    }
+    .present a{
+        padding: 0 10px 2px 10px;
+        font-size: 0.8em;
+    }
+    .description span {
+        font-size: 1.4em;
+    }
+    .description p {
+        font-size: 1em;
+    }
+    .present a {
+        padding: 0 10px 12px 10px;
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .description span {
+        font-size: 1.4em;
+    }
+    .description p {
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .description span {
+        font-size: 1.4em;
+    }
+    .description p {
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .navBar .navbar-text  a {
+        font-size: 0.6em;
+    }
+    .navBar .navbar-brand {
+        font-size: 0.8em;
+        line-height: 1em;
+    }
+    .present a{
+        /* padding: 0 4px 18px 4px; */
+        font-size: 0.6em;
+    }
+    .description {
+        padding-top: 20px;
+        padding-left: 50px!important;
+        padding-right: 50px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .description p {
+        font-size: 0.7em;
+    }
+}
+@media only screen and (max-width: 433px) {
+    .navBar .navbar-brand {
+        font-size: 0.7em;
+        line-height: 2em;
+    }
+    .navbar-brand img {
+        height: 40px;
+        margin-right: 1px;
+    }
+    .navBar .navbar-text  a {
+        font-size: 0.6em;
+    }
+    .present a{
+        font-size: 0.6em;
+    }
+    .description span {
+        font-size: 1.2em;
+    }
+    .footer1 span{
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .navBar .navbar-brand {
+        font-size: 0.55em;
+        line-height: 1em;
+    }
+    .navbar-brand img {
+        height: 20px;
+        margin-right: 1px;
+    }
+    .navbar-text {
+        padding-top: 0!important;
+    }
+    .navBar .navbar-text  a {
+        font-size: 0.5em;
+    }
+    .present a{
+        font-size: 0.5em;
+        padding: 0 4px 10px 4px;
+    }
+}

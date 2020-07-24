@@ -1,0 +1,458 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 Olive</title>
+    <link rel="shortcut icon" href="{%static 'assets/10logo.png'%}">
+    <link rel="stylesheet" href="{%static 'olive.css'%}">
+    <link rel="stylesheet" href="{%static 'calculator.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Nav bar -->
+    <div class="navBar container-fluid">
+        <div class="row">
+            <span class="col-4 col-sm-4"><a class="navbar-brand" href="index.html"><img src="{%static 'assets/10logo.png'%}"/>Rule<b>Binary</b></a></span>
+            <span class="col-2 pr-0 navbar-text"><a href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a></span>
+            <span class="present pl-1 pr-0 col-2 col-sm-2 navbar-text"><a href="{% url 'olive' %}">01 Olive</a></span>
+            <span class="col-2 pl-0 pr-0 navbar-text"><a href="#design">Designs</a></span>
+            <span class="col-2 pl-0 pr-0 col-sm-2 navbar-text"><a href="#contact">Connect</a></span>
+        </div>
+    </div>
+
+     <!-- 01 Olive -->
+     <div class="container-fluid row pr-0" id="home">
+        <div class="logo col-12 col-sm-6 text-center">
+            <img src="{%static 'assets/OliveLogo.png'%}" alt=""/>
+        </div>
+        <div class="description col-12 col-sm-6 pl-5">
+            <span class="lead" style="font-size: 7vw;font-weight: bold;font-family: 'Open Sans', sans-serif;">01 Olive</span>
+            <p class="lead">
+                01 Olive is a member of the Rule Binary family. 
+                01 Olive helps organisations make an Online Presence.
+            </p>
+            <p class="lead">
+                Give your 'Organisation' a special gift today.<br/>
+                <b>Get your Organisation a wonderful website with 01 Olive.</b>
+            </p>
+        </div>
+    </div>
+
+    <div class="whatsapp">
+        <span class="chat"><b>Chat with us</b></span>
+        <br/>
+        <a href="https://api.whatsapp.com/send?phone=919148540551"><i class='fa fa-whatsapp'></i></a>
+    </div>
+
+    <!-- Why a website -->
+    <div class="container-fluid row pl-0 m-0">
+        <div class="descriptionsvg col-md-8 col-sm-8 col-xs-6 col-8 d-lg-none d-xl-none container">
+            <img src="{%static 'assets/svg3.svg'%}" alt="" />
+        </div>
+        <div class="whyWeb description col-lg-9 col-md-12 col-sm-12 col-xs-12 col-12">
+            <span class="lead pl-5" style="font-size: 2.8vw;font-weight: bold;color: rgba(100,100,255,0.7);font-family: 'Open Sans', sans-serif;">Why a "house on the Internet"? (Why a Website?)</span>
+            <div class="lead pl-5">
+                <p class="benefit">
+                    <img src="{%static 'assets/check.png'%}" alt="" />
+                    Keeps the organisation connected with its members through regular updates.
+                </p>
+                <p class="benefit">
+                    <img src="{%static 'assets/check.png'%}" alt="" />
+                    Helps you easily promote your organisation by providing a global reach.
+                </p>
+                <p class="benefit">
+                    <img src="{%static 'assets/check.png'%}" alt="" />
+                    Keeps people informed about your organisation.
+                </p>
+                <p class="benefit">
+                    <img src="{%static 'assets/check.png'%}" alt="" />
+                    Helps establish credibility and reputation.
+                </p>
+            </div>
+        </div>
+        <div class="descriptionsvg col-lg-3 d-md-none d-sm-none d-lg-block d-none container">
+            <img src="{%static 'assets/svg3.svg'%}" alt="" />
+        </div>
+    </div>
+
+
+
+    
+
+    <!-- Why 01Olive -->
+    <div class="container-fluid" id="home">
+        <div class="whyOlive description">
+            <span class="lead pl-5" style="font-size: 2.8vw;font-weight: bold;color: rgba(100,100,255,0.7);font-family: 'Open Sans', sans-serif;">Why 01 Olive ?</span>
+            <div class="lead row pl-5 pr-5">
+                <div class="col-12 col-sm-4 right">
+                    <span class="s s1" onmouseover="showDesc(this)" onmouseout="hideDesc(this)"><img src="{%static 'assets/check.png'%}" alt="" />Fast website</span><br/>
+                    <p class="benefit benefit2 b1">
+                        Built with the latest technologies.<br>
+                    </p>
+                    <span class="s s2" onmouseover="showDesc(this)" onmouseout="hideDesc(this)"><img src="{%static 'assets/check.png'%}" alt="" />Cool Designs</span><br/>
+                    <p class="benefit benefit2 b2">
+                        <!-- <img src="assets/check.png" alt="" /> -->
+                        Tell us your preferences and we will come up with a unique design and layout for your website.
+                        <br>
+                    </p>
+                    <span class="s s3" onmouseover="showDesc(this)" onmouseout="hideDesc(this)"><img src="{%static 'assets/check.png'%}" alt="" />SSL Certificates</span><br/>
+                    <p class="benefit benefit2 b3">
+                        <!-- <img src="assets/check.png" alt="" /> -->
+                        We will help you apply SSL certificates to your awesome Website.
+                        <br>
+                    </p>
+                    <span class="s s8" onmouseover="showDesc(this)" onmouseout="hideDesc(this)"><img src="{%static 'assets/check.png'%}" alt="" />24 x 7 Support</span><br/>
+                    <p class="benefit benefit2 b8">
+                        <!-- <img src="assets/check.png" alt="" /> -->
+                        Have any doubt or facing any kind of problem? React out to us anytime.
+                        <br>
+                    </p>
+                </div>
+                <div class="why col-12 col-sm-4">
+                    <img src="{%static 'assets/svg4.svg'%}" alt=""/>
+                </div>
+                <div class="col-12 col-sm-4 left">
+                    <span class="s s5" onmouseover="showDesc(this)" onmouseout="hideDesc(this)"> <img src="{%static 'assets/check.png'%}" alt="" />Easy Updates</span><br/>
+                    <p class="benefit benefit2 b5">
+                        <!-- <img src="assets/check.png" alt="" /> -->
+                        A control panel that you can use to add new content to your website.
+                        <br>
+                    </p>
+                    <span class="s s6" onmouseover="showDesc(this)" onmouseout="hideDesc(this)"><img src="{%static 'assets/check.png'%}" alt="" />Secure</span><br/>
+                    <p class="benefit benefit2 b6">
+                        <!-- <img src="assets/check.png" alt="" />                         -->
+                        We ensure security of your data.<br>
+                    </p>
+                    <span class="s s7" onmouseover="showDesc(this)" onmouseout="hideDesc(this)"><img src="{%static 'assets/check.png'%}" alt="" />Hosting</span><br/>
+                    <p class="benefit benefit2 b7">
+                        <!-- <img src="assets/check.png" alt="" /> -->
+                        We will help you get your website up and running on the internet.
+                        <br>
+                    </p>
+                    <span class="s s4" onmouseover="showDesc(this)" onmouseout="hideDesc(this)"><img src="{%static 'assets/check.png'%}" alt="" />Renewal of existing website.</span><br/>
+                    <p class="benefit benefit2 b4">
+                        <!-- <img src="assets/check.png" alt="" /> -->
+                        Change is the Law of Universe.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Result Management System -->
+    <div class="container-fluid row pl-0 m-0">
+        <div class="descriptionsvg col-md-8 col-sm-8 col-xs-6 col-8 d-lg-none d-xl-none container">
+            <img src="{%static 'assets/result.svg'%}" alt="" />
+        </div>
+        <div class="whyWeb description col-lg-9 col-md-12 col-sm-12 col-xs-12 col-12">
+            <span class="lead pl-5" style="font-size: 2.8vw;font-weight: bold;color: rgba(100,100,255,0.7);font-family: 'Open Sans', sans-serif;">Looking for a Results Management System ?</span>
+            <div class="lead pl-5">
+                <p class="benefit">
+                    <img src="{%static 'assets/check.png'%}" alt="" />
+                    An easy to use system to upload examination marks of all your students.
+                </p>
+                <p class="benefit">
+                    <img src="{%static 'assets/check.png'%}" alt="" />
+                    Automatically generates <b>Result cards</b> for all your students, accessible over the internet only by the particular student.
+                </p>
+                <p class="benefit">
+                    <img src="{%static 'assets/check.png'%}" alt="" />
+                    Students can download their Result Card at the click of a button.
+                </p>
+                <p class="benefit">
+                    <img src="{%static 'assets/check.png'%}" alt="" />
+                    All this in the comfort of your own home.
+                </p>
+            </div>
+        </div>
+        <div class="descriptionsvg col-lg-3 d-md-none d-sm-none d-lg-block d-none container">
+            <img src="{%static 'assets/result.svg'%}" alt="" />
+        </div>
+    </div>
+
+
+    
+
+<div class="bd-example" id="design">
+    <p class="lead" style="font-size: 3vw;font-weight: bold;color: rgba(100,100,255,0.7);font-family: 'Open Sans', sans-serif;">Choose from variety of designs</p><br>
+
+    <div id="carouselExampleCaptions" class="carousel slide multi-item-carousel" data-ride="carousel">
+  
+    
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="item__third">
+            <img src="{%static 'assets/Artboard 1.png'%}" class="d-block w-100" style="box-shadow: 4px 4px 6px rgba(0,0,0,0.6);border-radius: 10px;" width="300px" alt="">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="item__third">
+            <img src="{%static 'assets/Artboard 2.png'%}" class="d-block w-100" style="box-shadow: 4px 4px 6px rgba(0,0,0,0.6);border-radius: 10px;" width="300px" alt="">
+          </div>
+        </div>
+        <div class="carousel-item">
+            <div class="item__third">
+              <img src="{%static 'assets/Artboard 3.png'%}" class="d-block w-100" style="box-shadow: 4px 4px 6px rgba(0,0,0,0.6);border-radius: 10px;" width="300px" alt="">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="item__third">
+              <img src="{%static 'assets/Artboard 4.png'%}" class="d-block w-100" style="box-shadow: 4px 4px 6px rgba(0,0,0,0.6);border-radius: 10px;" width="300px" alt="">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="item__third">
+              <img src="{%static 'assets/Artboard 5.png'%}" class="d-block w-100" style="box-shadow: 4px 4px 6px rgba(0,0,0,0.6);border-radius: 10px;" width="300px" alt="">
+            </div>
+          </div>
+        <div class="carousel-item">
+          <div class="item__third">
+            <img src="{%static 'assets/Artboard 6.png'%}" class="d-block w-100" style="box-shadow: 4px 4px 6px rgba(0,0,0,0.6);border-radius: 10px;" width="300px" alt="">
+          </div>
+        </div>
+      </div>
+  
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+  
+    </div>
+  </div>
+  
+
+
+
+
+
+
+    <div class="container-fluid footer1">
+        <span class="lead pl-5" style="font-size: 2.7vw;font-weight: bold;color: rgba(100,100,255,0.7);font-family: 'Open Sans', sans-serif;">Drop your info here we will contact you asap:</span>
+    </div>
+
+    <div class="container-fluid row" id="contact">
+        <div class="col-10 col-sm-6">
+            <img class="xyz" src="{%static 'assets/svg5.svg'%}" alt="none"/>
+        </div>
+        <div class="contact-us col-12 col-sm-6">
+            <form action="https://send.pageclip.co/pL5B4yR4VzfltmgoEowHv2ABUtMmnoFg/connectOrganisations" class="pageclip-form pr-0" method="post">
+                    <input type="text" name="name" class="form-control" placeholder="Organisation Name">
+                <input type="email" name="email" class="form-control" placeholder="Email - Id">
+                <input type="number" name="phone" class="form-control" placeholder="Your contact number">
+                <center><button type="submit" class="submit btn pageclip-form__submit">Connect</button></center>
+            </form>
+        </div>
+    </div>
+
+    <div class="OR container-fluid row pl-5 text-center">
+        <div class="line col-4 col-sm-5"></div>
+        <div class="textOR col-4 col-sm-2">OR</div>
+        <div class="line col-4 col-sm-5"></div>
+    </div>
+
+    <div class="container-fluid footer1">
+        <span class="lead pl-5" style="font-size: 2.7vw;font-weight: bold;color:rgba(100,100,255,0.7);font-family: 'Open Sans', sans-serif;">Reach out to us :</span>
+        <div class="row text-center contact">
+            <p class="col-12" style="font-size: 2vw;">
+                Email: connect@rulebinary.com<br/>
+            Phone: +91 8660851810 , +91 6388428801
+            </p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row rightsReserved">
+            <img src="{%static 'assets/10logo.png'%}"/>
+            <span class="col-12 lead name">Rule<b>Binary</b></span>
+            <span class="col-12 lead reserved">All Rights Reserved</span>
+        </div>
+    </div>
+
+
+    <!-- Calculator -->
+    <div class="calculator" id="calculator">
+        <div class="container row">
+            <div class="col-12">
+                <span class="lead hd">01 Olive Calculator</span><br/><br>
+                <span class="">Number of pages that you wish to have in your website ?</span>
+                <input type="number" class="calc form-control" id="numberPages" placeholder="No. of pages in your website"/>
+                <br>
+                <span>What kind of design/layout would you like your website to have ?</span><br>
+                <label class="calcLabel">
+                    <input type="radio" class="calc" id="readymade" checked name="design"/>
+                    Template (Choose from ready-made templates)
+                </label>
+                <label class="calcLabel">
+                    <input type="radio" class="calc" id="Personalised" name="design"/>
+                    Personalised (Want a special layout for your website)
+                </label><br/>
+                <span>Would you like to add special illustrations to your website?</span><br/>
+                <input type="number" class="calc form-control" id="svg" placeholder="No. of svgs to be designed"/>
+                <br>
+                <span>Would you like to have a notification manager for your website?</span><br/>
+                <label class="calcLabel"><input type="checkbox" class="calc" id="notifs"/>  Notifications</label><br>
+                <span>Would you want to include an "Exam Results" manager for your Institute?</span><br>
+                <label class="calcLabel"><input type="checkbox" class="calc" id="results"/>  Results Panel</label><br>
+                <div class="actions">
+                    <button type="button" class="btn btn-info" onclick="calculate()">Calculate</button>
+                    <button type="button" class="btn btn-danger closeC" onclick="closeCalc()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="showCalc" id="showCalc" onclick="showCalc()">
+        Calculate.<br/>
+        <p>Estimate a price for your needs.</p>
+    </div>
+    <!-- Calculator -->
+
+    <div class="bg-model">
+        <div class="model-content">
+            <p class="price lead">
+            </p>
+            <p class="pages lead">
+            </p>
+            <p class="otherpages lead">
+            </p>
+            <p class="design lead">
+            </p>
+            <p class="illustrat lead">
+            </p>
+            <p class="updtManager lead">
+            </p>
+            <p class="resManager lead">
+            </p>
+            <p class="ccpara">
+                <button><a href="#contact" class="closeConnect" onclick="closeCalc()">Contact Us</a></button>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function calculate() {
+            var pages = document.getElementById("numberPages").value
+            var readymade = document.getElementById("readymade").checked
+            var personalised = document.getElementById("Personalised").checked
+            var notifs = document.getElementById("notifs").checked
+            var results = document.getElementById("results").checked
+            var svg = document.getElementById("svg").value
+            var cost = 0 
+            if(pages == 0) {
+                alert("Building a website with 0 pages is not possible!")
+            } else {
+                var pageCost = (pages - 1) * 600, designCost = 0, svgCost = 0, updtCost = 0, resManCost = 0
+                cost += 2500
+                cost += (pages - 1) * 600
+
+                if( readymade != true ) {
+                    cost += 2000
+                    designCost = 2000
+                }
+
+                if(notifs) {
+                    cost += 500
+                    updtCost = 500
+                }
+
+                if(results) {
+                    cost += 1500
+                    resManCost = 1500
+                }
+
+                cost += svg * 400
+                svgCost = svg * 400
+                cost -= 1
+                document.getElementsByClassName("price")[0].innerHTML = "INR "+ cost + " /-"
+                document.getElementsByClassName("pages")[0].innerHTML = "For the Main Page : INR "+ 2500 + " /-"
+                if( pages > 1) {
+                    document.getElementsByClassName("otherpages")[0].style.display = "block"
+                    document.getElementsByClassName("otherpages")[0].innerHTML = "For other pages : INR " + pageCost + " /- (600 per Page)"
+                }
+                if(designCost != 0) {
+                    document.getElementsByClassName("design")[0].style.display = "block"
+                    document.getElementsByClassName("design")[0].innerHTML = "For Page Design/Layout : INR "+ designCost + " /-"
+                }
+                if( svgCost != 0) {
+                    document.getElementsByClassName("illustrat")[0].style.display = "block"
+                    document.getElementsByClassName("illustrat")[0].innerHTML = "For Illustrations : INR "+ svgCost + " /- (400 per Illustration)"
+                }
+                if( updtCost != 0) {
+                    document.getElementsByClassName("updtManager")[0].style.display = "block"
+                    document.getElementsByClassName("updtManager")[0].innerHTML = "For Notification Manager : INR "+ updtCost + " /-"
+                }
+                if( resManCost != 0) {
+                    document.getElementsByClassName("resManager")[0].style.display = "block"
+                    document.getElementsByClassName("resManager")[0].innerHTML = "For Result Manager and Report Card Generator : INR "+ resManCost + " /-"
+                }
+                document.getElementsByClassName("bg-model")[0].style.display = "block"
+                document.getElementById("calculator").style.display = "none"
+                document.getElementById("showCalc").style.display = "block"
+                window.scrollTo(0,0)
+
+            }
+        }
+
+        function appear() {
+            document.getElementById("calculator").style.display = "block"
+        }
+        setTimeout("appear()", 3000)
+        function closeCalc() {
+            document.getElementById("calculator").style.display = "none"
+            document.getElementById("showCalc").style.display = "block"
+        }
+
+        function showCalc() {
+            document.getElementById("calculator").style.display = "block"
+            document.getElementsByClassName("bg-model")[0].style.display = "none"
+            document.getElementById("showCalc").style.display = "none"
+        }
+    </script>
+
+    <script>
+        function showDesc(e) {
+            var item = e.className[e.className.length - 1]
+            var show = "b" + item
+            var ele = document.getElementsByClassName(show)[0]
+            ele.style.display = "inline"
+        }
+        function hideDesc(e) {
+            var item = e.className[e.className.length - 1]
+            var show = "b" + item
+            var ele = document.getElementsByClassName(show)[0]
+            ele.style.display = "none"
+        }
+    </script>
+
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+            $('.carousel-item', '.multi-item-carousel').each(function(){
+                var next = $(this).next();
+                if (! next.length) {
+                next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+            }).each(function(){
+                var prev = $(this).prev();
+                if (! prev.length) {
+                prev = $(this).siblings(':last');
+                }
+                prev.children(':nth-last-child(2)').clone().prependTo($(this));
+            });
+    </script>
+
+</body>
+</html>

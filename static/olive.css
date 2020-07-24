@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    overflow-x: hidden;
+}
+
+
+
+body {
+    padding-top:  70px;
+}
+
+
+
+.whatsapp {
+    z-index: 100;
+    position: fixed;
+    bottom: 30px;
+    background-color: rgb(37,211,102);
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;    
+}
+.chat{
+    font-size: 10px;
+    color: white;
+    padding: 10px;
+    padding-top: 0;
+}
+.whatsapp i{
+    font-size: 30px;
+    color: white;
+    padding: 4px 0;
+}
+
+
+
+
+/* NavBar */
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    padding-top: 6px;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+.navBar a {
+    text-decoration: none;
+    color: black;
+}
+.navBar .navbar-text  a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+    font-weight: 600;
+}
+.navbar-brand img {
+    height: 40px;
+    margin-right: 0px;
+}
+.present a{
+    padding: 0 5px 14px 5px;
+    font-size: 1.1em;
+    color: rgba(0,0,0,1)!important;
+    font-weight: 800;
+    border-bottom: solid 8px transparent;
+    border-image: url("assets/arrow.png") 300 8;
+}
+
+
+.logo img {
+    height: 450px;
+}
+
+
+
+
+
+.description {
+    padding-top: 80px;
+    padding-right: 50px;
+}
+.description > span {
+    color: rgba(0,0,0,0.9);
+    font-size: 2em;
+    font-weight: 600;
+}
+.description p {
+    font-size: 1.2em;
+    color: rgba(0,0,0,0.6);
+    font-weight: 500;
+    margin-top: 20px;
+}
+.descriptionsvg{
+    padding-top: 50px;
+    align-self: center;
+ }
+
+
+
+
+
+
+
+
+.right {
+    text-align: right;
+    padding: 80px;
+    padding-right: 50px!important;
+}
+.right span{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.right span img {
+    height: 26px;
+    margin-right: 10px;
+}
+
+.left {
+    padding: 80px;
+    padding-left: 50px!important;
+}
+.left span{
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.left span img {
+    height: 26px;
+    margin-right: 10px;
+}
+
+
+
+.benefit {
+    font-size: 0.9em!important;
+}
+.benefit img {
+    height: 24px;
+    margin-right: 10px;
+}
+.why {
+    padding-top: 40px!important; 
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+} 
+.bd-example {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.bd-example > p {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 600;
+}
+.multi-item-carousel {
+    overflow: hidden;
+  }
+  .multi-item-carousel .carousel-indicators {
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+  .multi-item-carousel .carousel-control-prev,
+  .multi-item-carousel .carousel-control-next {
+    background: rgba(255, 255, 255, 0.7);
+    width: 25%;
+    z-index: 11; /* .carousel-caption has z-index 10 */
+  }
+  .multi-item-carousel .carousel-inner {
+    width: 150%;
+    left: -25%;
+  }
+  .multi-item-carousel .carousel-item-next:not(.carousel-item-left),
+  .multi-item-carousel .carousel-item-right.active {
+    -webkit-transform: translate3d(33%, 0, 0);
+    transform: translate3d(33%, 0, 0);
+  }
+  .multi-item-carousel .carousel-item-prev:not(.carousel-item-right),
+  .multi-item-carousel .carousel-item-left.active {
+    -webkit-transform: translate3d(-33%, 0, 0);
+    transform: translate3d(-33%, 0, 0);
+  }
+  .multi-item-carousel .item__third {
+    float: left;
+    position: relative;
+    width: 33.33333333%;
+  }
+  .item__third {
+      padding: 30px;
+  }
+  .item__third img{
+      height: 500px;
+  }
+
+
+
+
+/* Try CSS */
+
+
+.contact-us {
+    margin-bottom: 30px;
+    margin: auto;
+}
+.contact-us form {
+    padding: 30px;
+    border-radius: 30px;
+}
+.contact-us form span {
+    font-size: 2em;
+    font-weight: 400;
+    color: white;
+} 
+.contact-us form input {
+    margin-top: 20px;
+    border-radius: 50px;
+    height: 50px;
+    border: none;
+    box-shadow: 
+    2px 2px 2px 1px grey;
+    padding-left: 30px;
+}
+.submit {
+    border-radius: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: rgba(0,0,0,1)!important;
+    height: 40px;
+    width: 200px;
+}
+
+
+
+.benefit2 {
+    display: none;
+}
+
+
+
+
+.line{
+    height: 3px;
+    background-color: rgba(0,0,0,0.4);
+}
+.textOR{
+    font-size: 2em;
+    color: rgba(0,0,0,0.6);
+    margin-top: -24px;
+}
+.OR{
+    width: 100%;
+    height: 40px;
+    padding-top: 15px;
+    margin-bottom: 25px;
+}
+
+/* Footer */
+.footer1 span{
+    font-size: 2em;
+    font-weight: 600;
+}
+.footer1 p{
+    font-weight: 600;
+}
+
+.rightsReserved {
+    padding-bottom: 20px;
+}
+.rightsReserved .name {
+    font-weight: 500;
+}
+.rightsReserved .reserved {
+    font-weight: 400;
+    font-size: 12px;
+}
+.rightsReserved {
+    background-color: rgba(0,0,0,0.4);
+    text-align: center!important;
+}
+.rightsReserved img{
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.container-fluid {
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+}
+
+@media only screen and (max-width: 1000px) {
+    .description span {
+        font-size: 1.4em;
+    }
+    .description p {
+        font-size: 1em;
+    }
+    .logo {
+        padding-top: 20px;
+    }
+    .right, .left {
+        padding: 60px; 
+    }
+    .right span{
+        font-size: 0.8em;
+    }
+    .right span img {
+        height: 24px;
+    }
+    .left span{
+        font-size: 0.8em;
+    }
+    .left span img {
+        height: 24px;
+    }
+    .item__third img{
+        height: 400px;
+    }
+    
+    .item__third {
+        padding: 15px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .right, .left {
+        padding: 40px; 
+    }
+}
+@media only screen and (max-width: 800px) {
+    .right span{
+        font-size: 0.7em;
+    }
+    .right span img {
+        height: 22px;
+    }
+    .left span{
+        font-size: 0.7em;
+    }
+    .left span img {
+        height: 22px;
+    }
+    .item__third img{
+        height: 350px;
+    }
+    
+  .item__third {
+    padding: 10px;
+}
+}
+@media only screen and (max-width: 680px) {
+    .navBar .navbar-text  a {
+        font-size: 0.8em;
+    }
+    .present a{
+        padding: 0 10px 18px 10px;
+        font-size: 0.8em;
+    }
+    .description > span {
+        font-size: 1.4em;
+    }
+    .description p {
+        font-size: 1em;
+    }
+    .right {
+        padding: 20px;
+        padding-right: 10px!important;
+    }
+    .left {
+        padding: 20px;
+        padding-left: 10px!important;
+    }
+    .right span{
+        font-size: 0.5em;
+    }
+    .right span img {
+        margin-right: 5px;
+        height: 20px;
+    }
+    .left span{
+        font-size: 0.5em;
+    }
+    .left span img {
+        height: 20px;
+        margin-right: 5px;
+    }
+    .item__third img{
+        height: 300px;
+    }
+    
+    .item__third {
+        padding: 6px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .navBar .navbar-text  a {
+        font-size: 0.6em;
+    }
+    .present a{
+        /* padding: 0 4px 2px 4px; */
+        font-size: 0.6em;
+    }
+    .logo {
+        padding-left: 100px!important;
+    }
+    .description {
+        padding-top: 20px;
+        padding-left: 50px!important;
+        padding-right: 50px;
+    }
+    .whyWeb {
+        padding-left: 0!important;
+    }
+    .whyWeb > span {
+        font-size: 1.1em;
+    }
+    .benefit {
+        font-size: 0.8em!important;
+    }
+    .whyOlive {
+        padding-left: 0!important;
+    }
+    .right {
+        text-align: left;
+    }
+    .right span, .left span {
+        font-size: 0.8em;
+    }
+    .right span img, .left span img {
+        margin-right: 20px;
+    }
+    .left {
+        margin-top: 20px;
+    }
+    .footer1 span {
+        font-size: 1.3em;
+    }
+    .footer1 p {
+        margin-top: 20px;
+    }
+    .item__third img{
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .whyWeb > span {
+        font-size: 0.9em;
+    }
+    .description p {
+        font-size: 0.7em;
+    }
+    .benefit {
+        font-size: 0.6em!important;
+    }
+    .right span, .left span {
+        font-size: 0.6em!important;
+    }
+    .logo img {
+        height: 250px;
+    }
+    .item__third img{
+        height: 220px;
+    }
+}
+
+@media only screen and (max-width: 433px) {
+    .navBar .navbar-brand {
+        font-size: 0.8em;
+        line-height: 2em;
+    }
+    .navBar .navbar-text  a {
+        font-size: 0.6em;
+    }
+    .present a{
+        /* padding: 0 0px 2px 0px; */
+        font-size: 0.6em;
+    }
+    .description span {
+        font-size: 1.2em;
+    }
+    .benefit {
+        font-size: 0.5em!important;
+    }
+    .whyWeb > span {
+        font-size: 0.7em;
+    }
+    .item__third img{
+        height: 200px;
+    }
+    .footer1 span{
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .item__third img{
+        height: 160px;
+    }
+}

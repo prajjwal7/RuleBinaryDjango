@@ -1,0 +1,278 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Binary</title>
+    <link rel="shortcut icon" href="{%static 'assets/10logo.png'%}">
+    <link rel="stylesheet" href="{%static 'index.css'%}">
+    <link rel="stylesheet" href="{%static 'calculator.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Nav bar -->
+    <div class="navBar container-fluid">
+        <div class="row">
+            <span class="col-4 col-sm-4"><a class="navbar-brand" href="index.html"><img src="{%static 'assets/10logo.png'%}"/>Rule<b>Binary</b></a></span>
+            <span class="present col-2 pr-0 navbar-text"><a href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a></span>
+            <span class="pl-1 pr-0 col-2 col-sm-2 navbar-text"><a href="{% url 'olive'%}">01 Olive</a></span>
+            <span class="col-2 pl-0 pr-0 navbar-text"><a href="#vision">Vision</a></span>
+            <span class="col-2 pl-0 pr-0 col-sm-2 navbar-text"><a href="#contact">Connect</a></span>
+        </div>
+    </div>
+
+    <!-- Rule Binary Home Screen -->
+    <div class="container-fluid row pr-0" id="home">
+        <div class="col-12 col-sm-6 text-center rbhead">
+            <img src="{%static 'assets/svg1.svg'%}" alt="none" />
+        </div>
+        <div class="description col-12 col-sm-6 pl-5">
+            <span class="lead" style="font-size: 6vw;font-weight: bold;font-family: 'Open Sans', sans-serif;">Rule Binary</span>
+            <p class="lead">
+                Rule Binary is an initiative to digitize various sectors in India.
+                Rule Binary will eventually come up with various services which will not only help organisations 
+                become more tech-friendly but also give them efficient solutions for smoother functioning. 
+            </p>
+        </div>
+    </div>
+
+
+    
+
+    <!-- 01 Olive -->
+    <div class="a01Olive container-fluid pl-5 pr-5 row" id="home">
+        <div class="descriptionsvg col-md-12 col-sm-12 col-xs-12 col-12 d-lg-none d-xl-none container">
+            <img src="{%static 'assets/svg3.svg'%}" alt="" />
+        </div>
+        <div class="description col-12 col-sm-6 pl-0">
+            <span class="lead" style="font-size: 2.8vw;font-weight: bold;color: rgba(100,100,255,0.7);font-family: 'Open Sans', sans-serif;">01 Olive</span>
+            <p class="lead">
+                01 Olive is a member of the Rule Binary family. 
+                01 Olive helps organisations make an Online Presence.
+            </p>
+            <p class="lead">
+                Give your 'Organisation' a special gift today.<br/>
+                <b>Get your Organisation a wonderful website with 01 Olive.</b>
+            </p>
+        </div>
+        <div class="descriptionsvg col-lg-6 d-md-none d-sm-none d-lg-block d-none container">
+            <img src="{%static 'assets/svg3.svg'%}" alt="" />
+        </div>
+    </div>
+
+    <div class="whatsapp">
+        <span class="chat"><b>Chat with us</b></span>
+        <br/>
+        <a href="https://api.whatsapp.com/send?phone=919148540551"><i class='fa fa-whatsapp'></i></a>
+    </div>
+
+
+    <!-- Our Vision -->
+
+    <div class="container-fluid pl-5 pr-5 row a01vision" id="vision">
+        <div class="col-12 col-sm-6" style="padding: 40px;">
+            <img src="{%static 'assets/svg2.svg' %}" alt="">
+        </div>
+        <div class="description col-12 col-sm-6 pl-0">
+            <span class="lead" style="font-size: 2.8vw;font-weight: bold;color: rgba(100,100,255,0.7);font-family: 'Open Sans', sans-serif;">Our Vision</span>
+            <p class="lead">
+                With the main aim of bringing in advanced technologies to ease the process of management, learning and teaching, 
+                RuleBinary is here to tackle various obstacles not only in the field of education, but other fields as well.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="container-fluid footer1">
+        <span class="lead pl-5" style="font-size: 2.7vw;font-weight: bold;color: rgba(100,100,255,0.7);font-family: 'Open Sans', sans-serif;">Drop your info here we will contact you asap:</span>
+    </div>
+
+
+    <div class="container-fluid row" id="contact">
+        <div class="col-12 col-sm-6">
+            <img class="xyz" src="{%static 'assets/svg5.svg'%}" alt="none"/>
+        </div>
+        <div class="contact-us col-12 col-sm-6">
+            <form action="https://send.pageclip.co/5j00agzVj7wfidCVu4EnAlw9gYDE2RuJ/connectOrganisations" class="pageclip-form pr-0" method="post">
+                <input type="text" name="name" class="form-control" placeholder="Organisation Name">
+                <input type="email" name="email" class="form-control" placeholder="Email - Id">
+                <input type="number" name="phone" class="form-control" placeholder="Your contact number">
+                <center><button type="submit" class="submit btn pageclip-form__submit">Connect</button></center>
+            </form>
+        </div>
+    </div>
+
+    <div class="OR container-fluid pl-5 row text-center">
+        <div class="line col-4 col-sm-5"></div>
+        <div class="textOR col-4 col-sm-2">OR</div>
+        <div class="line col-4 col-sm-5"></div>
+    </div>
+
+    <div class="container-fluid footer1">
+        <span class="lead pl-5" style="font-size: 2.7vw;font-weight: bold;color: rgba(100,100,255,0.7);font-family: 'Open Sans', sans-serif;">Reach out to us :</span>
+        <div class="row text-center contact">
+            <p class="col-12" style="font-size: 2vw;">
+                Email: connect@rulebinary.com<br/>
+            Phone: +91 8660851810 , +91 6388428801
+            </p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row rightsReserved">
+            <img src="{%static 'assets/10logo.png'%}"/>
+            <span class="col-12 lead name">Rule<b>Binary</b></span>
+            <span class="col-12 lead reserved">All Rights Reserved</span>
+        </div>
+    </div>
+
+
+    
+    <!-- Calculator -->
+    <div class="calculator" id="calculator">
+        <div class="container row">
+            <div class="col-12">
+                <span class="lead hd">01 Olive Calculator</span><br/><br>
+                <span class="">Number of pages that you wish to have in your website ?</span>
+                <input type="number" class="calc form-control" id="numberPages" placeholder="No. of pages in your website"/>
+                <br>
+                <span>What kind of design/layout would you like your website to have ?</span>
+                <label class="calcLabel">
+                    <input type="radio" class="calc" id="readymade" checked name="design"/>
+                    Template (Choose from ready-made templates)
+                </label>
+                <label class="calcLabel">
+                    <input type="radio" class="calc" id="Personalised" name="design"/>
+                    Personalised (Want a special layout for your website)
+                </label><br/>
+                <span>Would you like to add special illustrations to your website?</span><br/>
+                <input type="number" class="calc form-control" id="svg" placeholder="No. of svgs to be designed"/>
+                <br>
+                <span>Would you like to have a notification manager for your website?</span><br/>
+                <label class="calcLabel"><input type="checkbox" class="calc" id="notifs"/>  Notifications</label><br>
+                <span>Would you want to include an "Exam Results" manager for your Institute?</span><br>
+                <label class="calcLabel"><input type="checkbox" class="calc" id="results"/>  Results Panel</label><br>
+                <div class="actions">
+                    <button type="button" class="btn btn-info" onclick="calculate()">Calculate</button>
+                    <button type="button" class="btn btn-danger closeC" onclick="closeCalc()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="showCalc" id="showCalc" onclick="showCalc()">
+        Calculate.<br/>
+        <p>Estimate a price for your needs.</p>
+    </div>
+    <!-- Calculator -->
+
+    <div class="bg-model">
+        <div class="model-content">
+            <p class="price lead">
+            </p>
+            <p class="pages lead">
+            </p>
+            <p class="otherpages lead">
+            </p>
+            <p class="design lead">
+            </p>
+            <p class="illustrat lead">
+            </p>
+            <p class="updtManager lead">
+            </p>
+            <p class="resManager lead">
+            </p>
+            <p class="ccpara">
+            <button><a href="#contact" class="closeConnect" onclick="closeCalc()">Contact Us</a></button>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function calculate() {
+            var pages = document.getElementById("numberPages").value
+            var readymade = document.getElementById("readymade").checked
+            var personalised = document.getElementById("Personalised").checked
+            var notifs = document.getElementById("notifs").checked
+            var results = document.getElementById("results").checked
+            var svg = document.getElementById("svg").value
+            var cost = 0 
+            if(pages == 0) {
+                alert("Building a website with 0 pages is not possible!")
+            } else {
+                var pageCost = (pages - 1) * 600, designCost = 0, svgCost = 0, updtCost = 0, resManCost = 0
+                cost += 2500
+                cost += (pages - 1) * 600
+
+                if( readymade != true ) {
+                    cost += 2000
+                    designCost = 2000
+                }
+
+                if(notifs) {
+                    cost += 500
+                    updtCost = 500
+                }
+
+                if(results) {
+                    cost += 1500
+                    resManCost = 1500
+                }
+
+                cost += svg * 400
+                svgCost = svg * 400
+                cost -= 1
+                document.getElementsByClassName("price")[0].innerHTML = "INR "+ cost + " /-"
+                document.getElementsByClassName("pages")[0].innerHTML = "For the Main Page : INR "+ 2500 + " /-"
+                if( pages > 1) {
+                    document.getElementsByClassName("otherpages")[0].style.display = "block"
+                    document.getElementsByClassName("otherpages")[0].innerHTML = "For other pages : INR " + pageCost + " /- (600 per Page)"
+                }
+                if(designCost != 0) {
+                    document.getElementsByClassName("design")[0].style.display = "block"
+                    document.getElementsByClassName("design")[0].innerHTML = "For Page Design/Layout : INR "+ designCost + " /-"
+                }
+                if( svgCost != 0) {
+                    document.getElementsByClassName("illustrat")[0].style.display = "block"
+                    document.getElementsByClassName("illustrat")[0].innerHTML = "For Illustrations : INR "+ svgCost + " /- (400 per Illustration)"
+                }
+                if( updtCost != 0) {
+                    document.getElementsByClassName("updtManager")[0].style.display = "block"
+                    document.getElementsByClassName("updtManager")[0].innerHTML = "For Notification Manager : INR "+ updtCost + " /-"
+                }
+                if( resManCost != 0) {
+                    document.getElementsByClassName("resManager")[0].style.display = "block"
+                    document.getElementsByClassName("resManager")[0].innerHTML = "For Result Manager and Report Card Generator : INR "+ resManCost + " /-"
+                }
+                document.getElementsByClassName("bg-model")[0].style.display = "block"
+                document.getElementById("calculator").style.display = "none"
+                document.getElementById("showCalc").style.display = "block"
+                window.scrollTo(0,0)
+            }
+        }
+
+        function appear() {
+            document.getElementById("calculator").style.display = "block"
+        }
+        setTimeout("appear()", 3000)
+        function closeCalc() {
+            document.getElementById("calculator").style.display = "none"
+            document.getElementsByClassName("bg-model")[0].style.display = "none"
+            document.getElementById("showCalc").style.display = "block"
+        }
+
+        function showCalc() {
+            document.getElementById("calculator").style.display = "block"
+            document.getElementsByClassName("bg-model")[0].style.display = "none"
+            document.getElementById("showCalc").style.display = "none"
+        }
+    </script>
+
+
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+</body>
+</html>
